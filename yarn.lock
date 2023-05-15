@@ -181,6 +181,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@takeshape/esbuild-node-externals@workspace:*, @takeshape/esbuild-node-externals@workspace:esbuild-node-externals":
+  version: 0.0.0-use.local
+  resolution: "@takeshape/esbuild-node-externals@workspace:esbuild-node-externals"
+  dependencies:
+    "@types/node": ^18.15.10
+    esbuild: ^0.17.14
+    find-up: ^5.0.0
+    rimraf: ^4.4.1
+    tslib: ^2.4.1
+    typescript: ^4.9.4
+  peerDependencies:
+    esbuild: 0.12 - 0.17
+  languageName: unknown
+  linkType: soft
+
 "@types/node@npm:^18.15.10":
   version: 18.15.10
   resolution: "@types/node@npm:18.15.10"
@@ -318,21 +333,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-node-externals@workspace:esbuild-node-externals":
-  version: 0.0.0-use.local
-  resolution: "esbuild-node-externals@workspace:esbuild-node-externals"
-  dependencies:
-    "@types/node": ^18.15.10
-    esbuild: ^0.17.14
-    find-up: ^5.0.0
-    rimraf: ^4.4.1
-    tslib: ^2.4.1
-    typescript: ^4.9.4
-  peerDependencies:
-    esbuild: 0.12 - 0.17
-  languageName: unknown
-  linkType: soft
-
 "esbuild@npm:^0.17.14":
   version: 0.17.14
   resolution: "esbuild@npm:0.17.14"
@@ -422,8 +422,8 @@ __metadata:
   resolution: "example-basic@workspace:examples/basic"
   dependencies:
     "@accounts/rest-client": 0.30.0
+    "@takeshape/esbuild-node-externals": "workspace:*"
     esbuild: ^0.17.14
-    esbuild-node-externals: "workspace:esbuild-node-externals"
     koa: 2.13.4
   languageName: unknown
   linkType: soft
