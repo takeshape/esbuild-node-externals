@@ -1,4 +1,6 @@
-# esbuild-node-externals
+# @takeshape/esbuild-node-externals
+
+## Temporary package while waiting for https://github.com/pradel/esbuild-node-externals/pull/42
 
 [![npm version](https://img.shields.io/npm/v/esbuild-node-externals.svg)](https://www.npmjs.com/package/esbuild-node-externals)
 [![npm downloads per month](https://img.shields.io/npm/dm/esbuild-node-externals.svg)](https://www.npmjs.com/package/esbuild-node-externals)
@@ -13,10 +15,10 @@ This plugin requires minimum **Node.js 12**, and **Esbuild 0.12+**.
 
 ```sh
 # with npm
-npm install --save-dev esbuild-node-externals
+npm install --save-dev @takeshape/esbuild-node-externals
 
 # with yarn
-yarn add --dev esbuild-node-externals
+yarn add --dev @takeshape/esbuild-node-externals
 ```
 
 ## Usage
@@ -26,7 +28,7 @@ When you call the esbuild build API, add the esbuild-node-externals plugin.
 ```js
 // Your bundler file
 const esbuild = require('esbuild');
-const { nodeExternalsPlugin } = require('esbuild-node-externals');
+const { nodeExternalsPlugin } = require('@takeshape/esbuild-node-externals');
 
 esbuild.build({
   entryPoints: ['src/index.js'],
@@ -44,7 +46,7 @@ When calling this package, you can pass an `options` object.
 ```js
 // Your bundler file
 const esbuild = require('esbuild');
-const { nodeExternalsPlugin } = require('esbuild-node-externals');
+const { nodeExternalsPlugin } = require('@takeshape/esbuild-node-externals');
 
 esbuild.build({
   // ...
